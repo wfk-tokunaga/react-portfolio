@@ -4,25 +4,21 @@ function About() {
 
   return (
     <div id='about-me'>
-        <h1>About Me</h1>
+        <h1 className='page-title'>About Me</h1>
         <article className='content-section'>
           
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum labore, ad optio laborum consectetur 
-            dignissimos incidunt tempora consequuntur sit quae sint expedita excepturi obcaecati cupiditate non recusandae.</p>
+          <p>Hello! My name is Eika Tokunaga and I'm a musical composer and software engineer living in Albany, California. </p>
           
           <div className='grid-row'>
-            <p>Some text about coding and me. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum labore, 
-              ad optio laborum consectetur dignissimos incidunt tempora consequuntur sit quae sint expedita excepturi 
-              obcaecati cupiditate non recusandae, omnis sequi aliquid inventore a nihil, eum ducimus est mollitia? 
-              Ullam laboriosam voluptates repellendus qui deleniti, odit inventore?</p>
-            <img id='code-pic' src={require(`../../wiggins-pixel.png`)}></img>
+            <p>I began coding when I started attending Oberlin College in 2017. Since then, my passion for problem solving and desire to create interactive, engaging, and artistic applications has led me to pursue a career in software engineering. </p>
+            <img id='code-pic' src={require(`../../reactPortfolioPfp.jpeg`)}></img>
           </div>
           
-          <p>Some more text about my connection to music. Some text about coding and me. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum labore, ad optio laborum consectetur dignissimos incidunt tempora consequuntur sit quae sint expedita excepturi obcaecati cupiditate non recusandae, </p>
+          <p>I first got into music when my dad forced me to join choir in 6th grade to "make friends." Thankfully, he was onto something. Since then, I've dedicated large portions of my life to studying and creating music. </p>
 
           <div className='grid-row'>
-            <img id='music-pic' src={require(`../../butler.jpg`)}></img>
-            <p>Some text about music and me. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum labore, ad optio laborum consectetur dignissimos incidunt tempora consequuntur sit quae sint expedita excepturi obcaecati cupiditate non recusandae, omnis sequi aliquid inventore a nihil, eum ducimus est mollitia? Ullam laboriosam voluptates repellendus qui deleniti, odit inventore?</p>
+            <img id='music-pic' src={require(`../../reactPortfolioMusicPic.jpeg`)}></img>
+            <p>Since taking my first composition class at Oberlin College, I've slowly dived deeper into the composition world. My main two areas of composition are experimental chamber vocal ensembles and kumi daiko MAKE THIS A LINK LATER</p>
           </div>
         </article>
     </div>

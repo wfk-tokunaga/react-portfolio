@@ -53,7 +53,7 @@ function CodeSection(props) {
                 </div> */}
 
 
-                <h1>Languages</h1>
+                <h1 className="page-title">Languages</h1>
                 <div className="grid-container">
                     {languages.map(language => (
                         <div onClick={() => updateFocusedLanguage(language)} className = {`single-language grid-cell ${focusedLanguage === language && 'focusedCell'}`}>
@@ -66,7 +66,7 @@ function CodeSection(props) {
                     ))}
                 </div>   
 
-                <h1>Projects</h1>
+                <h1 className="page-title">Projects</h1>
                 <div className="grid-container projects-section">
                         {projects.filter(project => project.languagesUsed.includes(focusedLanguage)).map(project => (
                             <div className="single-project grid-cell">
@@ -78,9 +78,9 @@ function CodeSection(props) {
                                 className = {`project-title ${focusedProject === project && 'focused'}`}
                                     >{project.text}
                                 </span>
-                                <p>
+                                {/* <p>
                                     {project.description}
-                                </p>
+                                </p> */}
                                 <ul>
                                     {project.languagesUsed.filter(lang => lang.name !== 'all').map(lang => (
                                         <li>{lang.text}</li>
