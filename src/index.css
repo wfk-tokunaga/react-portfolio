@@ -19,6 +19,15 @@ body {
   margin: auto;
 }
 
+footer {
+  margin-top: 3rem;
+  border-top: white solid 1px;
+}
+
+footer p {
+  color: var(--secondary);
+}
+
 .contactList li {
   margin-top: 1rem;
   font-size: 2rem;

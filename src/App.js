@@ -4,6 +4,7 @@ import About from './components/About'
 import ContactInfo from './components/Contact';
 import { useState } from 'react';
 import CodeSection from './components/Code';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -196,38 +197,33 @@ function App() {
 
     const [focusedProject, setFocusedProject] = useState(projects[0]);
 
-    return ( <
-        div >
-
-        <
-        Nav setCurrentPage = { setCurrentPage }
-        currentPage = { currentPage }
-        pages = { pages } >
-        <
-        /Nav> <
-        main > {
+    return ( 
+    <div>
+        <Nav 
+            setCurrentPage = { setCurrentPage }
+            currentPage = { currentPage }
+            pages = { pages } >
+        </Nav> 
+        <main> 
+            {
             {
                 'home':
-                    <
-                    About > < /About>,
+                    <About> </About>,
                 'contact':
-                    <
-                    ContactInfo > < /ContactInfo>,
+                    <ContactInfo> </ContactInfo>,
                 'code':
-                    <
-                    CodeSection
-                languages = { languages }
-                focusedLanguage = { focusedLanguage }
-                setFocusedLanguage = { setFocusedLanguage }
-                projects = { projects }
-                focusedProject = { focusedProject }
-                setFocusedProject = { setFocusedProject } >
-                <
-                /CodeSection>
+                    <CodeSection
+                        languages = { languages }
+                        focusedLanguage = { focusedLanguage }
+                        setFocusedLanguage = { setFocusedLanguage }
+                        projects = { projects }
+                        focusedProject = { focusedProject }
+                        setFocusedProject = { setFocusedProject } >
+                    </CodeSection>
             }[currentPage.name]
-        } <
-        /main> < /
-        div >
+        } </main> 
+        <Footer></Footer>
+    </div>
     );
 }
 

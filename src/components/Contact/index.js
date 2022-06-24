@@ -6,16 +6,16 @@ function ContactInfo() {
             <h1 className="page-title">Reach Me</h1>
             <ul className="contactList">
                 <li>
-                    <a type="email" href="wktokunaga@gmail.com">Email</a>
+                    Email: <a type="email" href="wktokunaga@gmail.com">wktokunaga@gmail.com</a>
                 </li>
                 {/* <li>
                     LinkedIn: 
                 </li> */}
                 <li>
-                    <a href="https://t.me/thrill_iam">Telegram</a>
+                    Telegram: <a href="https://t.me/thrill_iam">@thrill_iam</a>
                 </li>
                 <li>
-                    <a href="https://github.com/wfk-tokunaga">GitHub</a>
+                    GitHub: <a href="https://github.com/wfk-tokunaga">wfk-tokunaga</a>
                 </li>
                 {/* <li>
                     Software Engineering Resume:
