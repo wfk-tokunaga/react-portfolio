@@ -34,25 +34,6 @@ function CodeSection(props) {
             <div>
                 {isModalOpen && <Modal onClose={toggleModal} focusedProject={focusedProject}></Modal>}
 
-                {/* <div className="modal-backdrop">
-                    <div className="modal-container">
-                        <h3 className="modalTitle">{focusedProject.text}</h3>
-                        <p>
-                            {focusedProject.description}
-                        </p>
-                        <p>{focusedProject.languagesUsed}</p>
-                        <p>{focusedProject.description}</p>
-                        <p>
-                            <a href={`${focusedProject.github}`}>GitHub Repositiory</a>
-                        </p>
-                        <p>
-                            <a href={`${focusedProject.github}`}>Deployed Application</a>
-                        </p>
-                        <button type="button" onClick={toggleModal}>Close this modal</button>
-                    </div>
-                </div> */}
-
-
                 <h1 className="page-title">Languages</h1>
                 <div className="grid-container">
                     {languages.map(language => (

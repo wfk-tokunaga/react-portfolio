@@ -10,10 +10,10 @@ function App() {
 
     const [pages] = useState([
         { name: 'home', text: 'EIKA TOKUNAGA' },
-        // { name: 'about', text: 'About' },
         { name: 'code', text: 'Code' },
         // {name:'music', text: 'Music'},
-        { name: 'contact', text: 'Contact' }
+        { name: 'contact', text: 'Contact' },
+        // { name: 'resume', text: 'Resume' }
     ]);
 
     const [currentPage, setCurrentPage] = useState(pages[0]);
@@ -38,18 +38,6 @@ function App() {
         // {name: '', text: '', id: },
         // {name: '', text: '', id: },
     ]);
-
-    // const sortedLangs = languages.sort(function(a, b) {
-    //   if (a.name < b.name) {
-    //     return -1;
-    //   }
-    //   if (a.name > b.name) {
-    //     return 1;
-    //   }
-    //   // names must be equal
-    //   return 0;
-    // });
-    // setLanguages(sortedLangs);
 
     const [focusedLanguage, setFocusedLanguage] = useState(languages[0]);
 

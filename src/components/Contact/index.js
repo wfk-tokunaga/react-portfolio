@@ -6,7 +6,7 @@ function ContactInfo() {
             <h1 className="page-title">Reach Me</h1>
             <ul className="contactList">
                 <li>
-                    Email: <a type="email" href="wktokunaga@gmail.com">wktokunaga@gmail.com</a>
+                    Email: <a href = "mailto: abc@example.com">wktokunaga@gmail.com</a>
                 </li>
                 {/* <li>
                     LinkedIn: 
