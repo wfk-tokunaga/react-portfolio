@@ -21,11 +21,18 @@ body {
 
 footer {
   margin-top: 3rem;
+  padding: 1rem;
   border-top: white solid 1px;
+  
 }
 
-footer p {
+footer div {
+  margin: auto;
+}
+
+footer span a {
   color: var(--secondary);
+  margin-right: 1rem;
 }
 
 .contactList li {
